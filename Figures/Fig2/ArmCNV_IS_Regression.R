@@ -1,5 +1,5 @@
-source("scripts/immunescore_cnv_regression_function.R") # function to run regression models
-source("scripts/immunescore_cnv_regression_plotting_function.R") # function to plot outputs
+source("R/immunescore_cnv_regression.R") # function to run regression models
+source("R/plot_area_immunescore_cnv_regression.R") # function to plot outputs
 
 working_tables <- readRDS(file = "data/TCGA_working_tables.rds")
 cancers <- unique(gsub("_.*", "", names(working_tables)))
